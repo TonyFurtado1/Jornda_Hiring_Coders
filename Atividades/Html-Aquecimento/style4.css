@@ -1,0 +1,18 @@
+/*TAGs*/
+body {
+    text-align: center;
+}
+/*IDs*/
+#login {
+    background-color: black;
+    color: white;
+}
+/*IDs*/
+#registre {
+    background-color: blue;
+    color: white;
+}
+/*classes*/
+.copy {
+    font-size: 8px;
+}
