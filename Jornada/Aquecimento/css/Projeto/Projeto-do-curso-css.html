@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +26,10 @@
             <li>
                 <a target="_blank" href="https://wa.me/21999999999">whatsapp</a>
             </li>
+
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/tonyfurtado">linkedin</a>
+            </li>
         </ul>
     </header>
     <main>
@@ -34,17 +38,17 @@
                 <h1>Tony Furtado</h1>
                 <h5>Engenheiro da Computação</h5>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-sort-down"></i>
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
                
 
             </div>
-            <div id="about"> 
+            <div style="display: none;" id="about"> 
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ad eum dolorem repellat dolore aspernatur praesentium numquam eos veniam atque dolores magnam, necessitatibus placeat! Temporibus suscipit quo.</p>
             </div>
             <div class="form">
                 <div>
-                    <p>deixe seu contato!</p>
+                    <p>Deixe seu contato!</p>
                 </div>
                 <form action="">
                     <input type="text" placeholder="Seu melhor email :)">
@@ -55,8 +59,17 @@
             </div>
 
         </section>
+        <!--https:animista.net*/ -->
 
     </main>
+    <script>
+        function displayabout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
     
 </body>
 </html>
